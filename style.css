@@ -16,7 +16,10 @@ body {
     color: var(--texte);
     font-family: 'Poppins', sans-serif;
 }
-h1, h2, h3{
+
+h1,
+h2,
+h3 {
     font-family: 'Playfair Display', serif;
 }
 
@@ -26,34 +29,42 @@ img {
 }
 
 header {
+    position: fixed;
+    z-index: 1000;
     display: flex;
+    height: 90px;
+    width: 100vw;
+    background-color: #0d0d0d;
+    margin-bottom: 550px;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+
+    .logo {
+        height: 50px;
+        margin-left: 20px ;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 32px;
+        list-style: none;
+    }
+
+    nav a {
+        color: var(--texte);
+        text-decoration: none;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: var(--or);
+    }
 }
 
-.logo {
-    height: 50px;
-}
-
-nav ul {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-}
-
-nav a {
-    color: var(--texte);
-    text-decoration: none;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: var(--or);
-}
 
 .hero {
     position: relative;
